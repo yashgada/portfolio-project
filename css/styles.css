@@ -166,7 +166,14 @@ p {
   }
 }
 /* added during recording */
-
+.underline{
+  width: 5rem;
+  height: 0.25rem;
+  background-color: var(--clr-primary-5);
+  margin-bottom: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*
 =============== 
 Navbar
@@ -317,21 +324,73 @@ Sidebar
   color: #e66b6b;
   cursor: pointer;
 }
-* {
-  /* border: 1px solid red; */
-}
 /*
 =============== 
 Hero
 ===============
 */
 /* underline added to globals */
-
+.hero .underline{
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+}
+.hero-img{
+  display: none;
+}
+.hero{
+  background: var(--clr-primary-10);
+}
+.hero-center{
+  min-height: calc(100vh - 5rem);
+  display: grid;
+  place-items: center;
+}
+.hero-info h4{
+  color: var(--clr-grey-5);
+}
+.hero-icons{
+  justify-items: flex-start;
+}
+.hero-btn{
+  margin-top: 1.25rem;
+}
+@media screen and (min-width:992px) {
+  .hero-img{
+    display: block;
+    position: relative;
+  }
+  .hero-center{
+    /* this is already set to grid when aligning the hero-info in center */
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.25rem solid var(--clr-primary-5);
+    /* this is to offset the position of the frame like border in the back of the image */
+    top: 2rem;
+    right: -2rem;
+  }
+}
+.hero-photo{
+  width: 25rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: var(--radius);
+  /* position is set to relative so that the image is ahead of the frame like border that is supposed to be behind of the image. Since that is set to position relative and is outside the normal flow, this is set to relative */
+  position: relative;
+}
+* {
+  /* border: 1px solid red; */
+}
 /*
 =============== 
 About
 ===============
 */
+
 /* section title added to globals */
 
 /*
