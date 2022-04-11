@@ -582,7 +582,53 @@ Projects
 Connect
 ===============
 */
-
+.connect{
+  min-height: 40vh;
+  position: relative;
+  padding: 10rem 0 5rem 0;
+  margin: 5rem 0;
+}
+/* A point to note here is, since the .connect does not really have any data in it, it has a height of 0. Only padding. Because there is nothing to occupy any space/height in the actual element. the .vido-container is positioned absolutely */
+.video-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.connect::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-white);
+  opacity: 0.7;
+  z-index: -1;
+}
+.video-banner .section-title{
+  margin-bottom: 2rem;
+}
+.video-text{
+  max-width: 30rem;
+}
+.video-banner{
+  /* z-index: 0; */
+  background: var(--clr-primary-10);
+  padding: 3rem 5rem 12rem 5rem;
+  text-align: center;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+.connect{
+  display: grid;
+  place-items: center;
+  /* clip-path: polygon(30% 0%, 70% 0%, 100% 10%, 100% 90%, 70% 100%, 30% 100%, 0 90%, 0 10%); */
+  /* clip-path: polygon(30% 0%, 70% 0%, 100% 25%, 100% 75%, 70% 100%, 30% 100%, 0 75%, 0 25%); */
+  clip-path: polygon(50% 0, 100% 15%, 100% 85%, 49% 100%, 0 85%, 0 15%);
+}
 /*
 =============== 
 Skills
