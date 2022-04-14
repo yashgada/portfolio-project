@@ -554,42 +554,42 @@ Projects
     grid-template-areas:
       "a b b"
       "a c d";
-      gap: 1rem;
-    }
-    .project-img {
-      height: 100%;
-    }
-    .project {
-      height: 100%;
-    }
-    .project-1 {
-      grid-area: a;
-    }
-    .project-2 {
-      grid-area: b;
-    }
-    .project-3 {
-      grid-area: c;
-    }
-    .project-4 {
-      grid-area: d;
-    }
+    gap: 1rem;
   }
-  /*
+  .project-img {
+    height: 100%;
+  }
+  .project {
+    height: 100%;
+  }
+  .project-1 {
+    grid-area: a;
+  }
+  .project-2 {
+    grid-area: b;
+  }
+  .project-3 {
+    grid-area: c;
+  }
+  .project-4 {
+    grid-area: d;
+  }
+}
+/*
   =============== 
   Connect
   ===============
   */
-  .connect {
-    min-height: 40vh;
-    position: relative;
-    padding: 10rem 0 5rem 0;
-    margin: 5rem 0;
-  }
-  /* A point to note here is, since the .connect does not really have any data in it, it has a height of 0. Only padding. Because there is nothing to occupy any space/height in the actual element. the .vido-container is positioned absolutely */
-  .video-container {
-    position: absolute;
-    top: 0;
+.connect {
+  min-height: 40vh;
+  position: relative;
+  padding: 10rem 0 5rem 0;
+  margin: 5rem 0;
+}
+/* A point to note here is, since the .connect does not really have any data in it, it has a height of 0. Only padding. Because there is nothing to occupy any space/height in the actual element. the .vido-container is positioned absolutely */
+.video-container {
+  position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -626,30 +626,30 @@ Projects
     75% 100%,
     50% 75%,
     0% 75%
-    );
-  }
-  .connect {
-    display: grid;
-    place-items: center;
-    /* clip-path: polygon(30% 0%, 70% 0%, 100% 10%, 100% 90%, 70% 100%, 30% 100%, 0 90%, 0 10%); */
-    /* clip-path: polygon(30% 0%, 70% 0%, 100% 25%, 100% 75%, 70% 100%, 30% 100%, 0 75%, 0 25%); */
-    clip-path: polygon(50% 0, 100% 15%, 100% 85%, 49% 100%, 0 85%, 0 15%);
-  }
-  /*
+  );
+}
+.connect {
+  display: grid;
+  place-items: center;
+  /* clip-path: polygon(30% 0%, 70% 0%, 100% 10%, 100% 90%, 70% 100%, 30% 100%, 0 90%, 0 10%); */
+  /* clip-path: polygon(30% 0%, 70% 0%, 100% 25%, 100% 75%, 70% 100%, 30% 100%, 0 75%, 0 25%); */
+  clip-path: polygon(50% 0, 100% 15%, 100% 85%, 49% 100%, 0 85%, 0 15%);
+}
+/*
   =============== 
   Skills
   ===============
   */
-  @media screen and (min-width: 768px) {
-    .skills-center {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 2rem;
-    }
+@media screen and (min-width: 768px) {
+  .skills-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
   }
-  .skills {
-    background: var(--clr-primary-9);
-  }
+}
+.skills {
+  background: var(--clr-primary-9);
+}
 .skills h3 {
   margin: 1.5rem 0;
   color: var(--clr-primary-1);
@@ -806,27 +806,27 @@ Blog
 }
 
 /* Rest of the styles */
-.card-info{
+.card-info {
   padding: 1rem 1.5rem;
 }
-.card-front img{
+.card-front img {
   height: 13rem;
   object-fit: cover;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
 }
-.card-footer{
+.card-footer {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
 }
-.card-footer img{
+.card-footer img {
   width: 2rem;
   height: 2rem;
   object-fit: cover;
   border-radius: 50%;
 }
-.card-footer p{
+.card-footer p {
   margin-bottom: 0;
   text-transform: capitalize;
   justify-self: flex-end;
@@ -834,9 +834,9 @@ Blog
   color: var(--clr-primary-5);
   font-size: 0.85rem;
 }
-.blog-center{
+.blog-center {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(330px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 3rem 1rem;
 }
 /*
@@ -845,22 +845,22 @@ Footer
 ===============
 */
 
-.footer{
+.footer {
   /* padding-bottom: 2rem; */
   background: #222;
   display: grid;
   place-items: center;
 }
-.footer .social-icons{
+.footer .social-icons {
   margin-bottom: 2rem;
 }
-.footer .social-icon{
+.footer .social-icon {
   color: var(--clr-primary-5);
 }
-.footer .social-icon:hover{
+.footer .social-icon:hover {
   color: var(--clr-primary-10);
 }
-.footer p{
+.footer p {
   font-size: 1.25rem;
   text-transform: capitalize;
 }
